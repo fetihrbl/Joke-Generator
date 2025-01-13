@@ -1,0 +1,31 @@
+button {
+    display: inline-block;
+    padding: 12px 30px; /* Daha geniş padding */
+    background-color: #70a03a; /* Başlangıç rengi */
+    color: #ffffff;
+    border: none;
+    font-size: 18px; /* Font boyutu arttırıldı */
+    cursor: pointer;
+    border-radius: 12px; /* Daha yuvarlak kenarlar */
+    transition: all 0.3s ease; /* Hem renk, hem de boyut geçişi */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    text-transform: uppercase; /* Buton yazısı büyük harflerle */
+    letter-spacing: 1px; /* Harf aralığı */
+}
+
+button:hover {
+    background-color: #c1f590; /* Hover efektiyle renk değişimi */
+    transform: translateY(-3px); /* Hover sırasında butonu yukarıya kaydır */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Hover'da daha belirgin gölge */
+}
+
+button:active {
+    background-color: #297910; /* Tıklama anında renk değişimi */
+    transform: translateY(2px); /* Butonu biraz aşağıya kaydır */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Aktif durumda daha küçük gölge */
+}
+
+button:focus {
+    outline: none; /* Focus olduğunda mavi kenarlık görünmesin */
+    box-shadow: 0 0 5px rgba(0, 153, 255, 0.7); /* Focus olduğunda mavi gölge */
+}

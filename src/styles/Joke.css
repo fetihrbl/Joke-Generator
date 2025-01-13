@@ -1,0 +1,92 @@
+/* Genel Gövde Stili */
+body {
+    background-color: #2c3e50; /* Koyu mavi arka plan */
+    color: #ecf0f1; /* Beyaz metin */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ana Container (Joke) */
+.joke {
+    background-color: #34495e; /* Gri-mavi arka plan */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    width: 100%;
+    max-width: 500px; /* Maksimum genişlik */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    height: 300px; /* Sabit yükseklik */
+    overflow: hidden; /* Taşma durumunu engelle */
+}
+
+/* Başlık */
+h1 {
+    font-size: 2rem; /* Sabit başlık boyutu */
+    margin-bottom: 20px;
+    color: #f39c12; /* Sarı renk başlık için */
+}
+
+/* Buton Stili */
+button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+    width: 80%; /* Sabit buton genişliği */
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Joke Metni */
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #bdc3c7;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #f39c12; /* Sınır rengi */
+    border-radius: 8px;
+    background-color: #34495e;
+    height: 80px; /* Sabit yükseklik */
+    overflow-y: auto; /* Taşma durumunda dikey kaydırma çubuğu */
+    width: 100%;
+}
+
+/* Responsive Tasarım (Mobilde) */
+@media (max-width: 768px) {
+    .joke {
+        padding: 15px 25px; /* Mobilde padding değeri azaltıldı */
+        max-width: 90%; /* Genişlik daha fazla olabilsin */
+        height: 250px; /* Mobilde biraz daha kısa konteyner */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Başlık boyutunu mobilde küçült */
+    }
+
+    button {
+        padding: 12px 22px; /* Buton padding değerini mobilde küçült */
+    }
+
+    p {
+        font-size: 1rem; /* Metin boyutunu mobilde küçült */
+        height: 60px; /* Metin kutusunun yüksekliğini mobilde küçült */
+    }
+}
